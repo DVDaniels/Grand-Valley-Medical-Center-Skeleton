@@ -61,7 +61,7 @@ html {
 }
 
 .main-hero {
-    background: url(../images/med-hero.jpg)
+    background: url(/images/med-hero.jpg)
     no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
