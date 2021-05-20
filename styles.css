@@ -1,5 +1,9 @@
 /* Global Styles */
 
+/* $color-primary: #6dbbec; */
+/* $color-secondary: #75d5ff  */
+/* $color-dark-grey: #1f2329 */
+
 * {
     margin: 0;
 }
@@ -9,15 +13,39 @@ html {
     font-size: 10px;
 }
 
+a {
+    text-decoration: none;
+    color: #003d77;
+}
+
+a:visited {
+    color: #003d77;
+}
+
+a:hover {
+    color: #0096ff;
+    transition: all .3s;
+}
+
+/* Helpers */
+#center {
+    text-align: center;
+}
+
+
+/* Header */
+
 .head {
     width: 100%;
-    height: 7rem;
-    padding: 2rem;
-    background-color: #6ebbec;
+    height: 12rem;
+    padding: 2rem 2.5rem 0rem 2.5rem;
+    background: rgb(132,207,255);
+    background: linear-gradient(90deg, rgba(132,207,255,1) 6%, rgba(117,213,255,1) 47%, rgba(132,207,255,1) 100%);
 }
 
 .logo {
     float: left;
+    padding-top: 1rem;
 }
 
 .logo img {
@@ -26,11 +54,12 @@ html {
 
 .contact-info {
     float: right;
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: 900;
+    padding: 1rem;
     margin-right: 4rem;
-    color: #000;
-    text-shadow: 1px 2px 2px rgb(106, 106, 106);
+    color: #003d77;
+    text-shadow: 1px 2px 8px #ffffff43;
 }
 
 .navbar {
@@ -49,10 +78,11 @@ html {
     color: #fff;
     text-decoration: none;
     padding: 1.2rem;
+    transition: all .3s;
 }
 
 .navbar a:hover {
-    color: grey;
+    color: #75d5ff;
 }
 
 .navigation {
@@ -61,7 +91,7 @@ html {
 }
 
 .main-hero {
-    background: url(../images/med-hero.jpg)
+    background: url(../images/screening.jpg)
     no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -70,8 +100,94 @@ html {
 }
 
 .container {
-    height: 100rem;
-    background-color: rgb(237, 237, 237);
+    height: auto;
+    width: 100%;
+    background: rgb(132,207,255);
+    background: linear-gradient(90deg, rgba(132,207,255,1) 6%, rgba(117,213,255,1) 47%, rgba(132,207,255,1) 100%);
+}
+
+.news {
+    height: 25rem;
+    padding: 3rem 6rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.351);
+}
+
+.news img {
+    float: left;
+    height: 15rem;
+    width: auto;
+    padding-right: 3rem;
+    border-radius: 3px;
+}
+
+.newstext {
+    height: auto;
+    padding: 0 8rem;
+}
+
+.headline {
+    margin-bottom: 1.5rem;
+}
+
+/* locations */
+
+.header-wrapper {
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+#location-break {
+    border: 1px solid #003d78;
+    border-radius: 3px;
+    margin: 2rem;
+}
+
+.squares-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.squares-wrapper > .squares {
+    width: 1000px;
+    margin-bottom: 2rem;
+}
+
+.squares-wrapper > .squares  .square {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: -4px;
+}
+
+.square > .img-wrapper img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.square > .square-text-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 42px;
+}
+
+.square > .square-text-wrapper h1 {
+    font-size: 3rem;
+    color: #003d78;
+}
+
+.square > .square-text-wrapper p {
+    font-size: 1.5rem;
+}
+
+
+/* Footer */
+
+#footer-logo {
+    height: 6rem;
 }
 
 .footer {
@@ -82,4 +198,5 @@ html {
     text-align: center;
     justify-content: center;
     padding-top: 4rem;
+    padding-bottom: 4rem;
 }

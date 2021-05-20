@@ -12,19 +12,25 @@
     <link rel="stylesheet" href="styles.css">
     <title>Grand Valley Medical Specialists</title>
 </head>
+
+
 <header class="head">
     <div class="logo">
-        <img src="images/logo.png" alt="Grand Valley Medical Logo">
+        <a href="#"><img src="images/logo.png" alt="Grand Valley Medical Logo"></a>
     </div>
 
     <div class="contact-info">
         <p><i class="fas fa-phone-square"></i> Phone: +1 616-459-3158</p>
+        <a href="https://www.facebook.com/yourgvms/" target="_blank"><p><i class="fab fa-facebook-square"></i> Visit us on Facebook</p></a>
+        
     </div>
 </header>
+
+
 <nav>
     <ul class="navbar">
         <div class="navigation">
-            <a href="#">Patient Portal</a>
+            <a href="https://gvmsonline.followmyhealth.com/Login/Home/Index?authproviders=0&returnArea=PatientAccess#!/default" target="_blank"><i class="fas fa-sign-in-alt"></i> Patient Portal</a>
             <a href="#">Locations</a>
             <a href="#">About</a>
             <a href="#">Contact</a>
@@ -36,38 +42,63 @@
     <div class="main-hero"></div>
 
     <div class="container">
-        <div class="News">
-            <h1>Latest News</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At nihil excepturi repudiandae! Ducimus quaerat mollitia quod nemo optio modi dolore architecto nostrum, nam, ullam provident porro at laborum non, qui possimus? Magni commodi doloremque et autem, quam libero error nobis recusandae accusamus odio dicta voluptate praesentium? Quas quos enim molestias obcaecati a, nulla quae sint explicabo voluptas distinctio ea error omnis pariatur facilis hic. Accusantium delectus doloremque quos suscipit dignissimos provident hic eveniet quaerat, ea itaque. Dolores iure laborum facilis. Soluta totam maxime dolorem quibusdam quos voluptates odit rem exercitationem architecto sapiente. Beatae quisquam ad placeat error, quaerat nobis mollitia?</p>
+        <div class="news">
+            <div class="newstext">
+                <h1 class="headline"><i class="far fa-newspaper"></i> Latest News</h1>
+                <img src="images/medical-hero.jpg" alt="latest news">
+                <p>At Grand Valley Medical Specialists our goal is to provide our patients with the best experience possible when
+                    interacting with our practice. That’s why we’re pleased to offer secure, interactive patient self-service features
+                    that
+                    let you communicate with us from the convenience of your home or office.
+                    <br>
+                    <br>
+                    <a href="https://gvmsonline.followmyhealth.com/Login/Home/Index?authproviders=0&returnArea=PatientAccess#!/default"
+                        target="_blank">&rarr; So… why call, when you can click?</a>
+                </p>
+            </div>
         </div>
 
-        <div class="locations">
-            <div class="location1">
-                <div class="location-info">
-                    location info
-                </div>
-                <div class="location-google-map">
-                    google map
-                </div>
+
+            <div class="header-wrapper">
+                <h2 id="center"><i class="fas fa-compass"></i> Locations</h2>
+                <hr id="location-break">
             </div>
 
-            <div class="location2">
-                <div class="location-info">
-                    location info
+        <div class="squares-wrapper">
+            
+            <div class="squares">
+                <div class="square">
+                    <div class="img-wrapper">
+                        <img src="images/national.jpg" alt="Mayo Clinic">
+                    </div>
+        
+                    <div class="square-text-wrapper">
+                        <h1>East Paris — SE Grand Rapids</h1>
+                        <p>The East Paris office is at 1000 East Paris Ave., SE, Suite 100, Grand Rapids, MI 49546.</p>
+                    </div>
                 </div>
-                <div class="location-google-map">
-                    google map
+        
+        
+                <div class="square">
+                    <div class="square-text-wrapper">
+                        <h1>Health Park — Wyoming.</h1>
+                        <p>The Health Park office is located in the Health Park Building at 2093 Health Drive SW, Suite 200, in Wyoming. This
+                        office is east of Byron Center Avenue off Gezon Parkway, in the Metro Health Village.</p>
+                    </div>
+        
+                    <div class="img-wrapper">
+                        <img src="images/solen.jpg" alt="Hospital">
+                    </div>
                 </div>
             </div>
-
         </div>
-    </div>
     
 </body>
 
 <footer>
     <div class="footer">
-        <p>© Copyright 2021 Grand Valley Medical Specialists, PLC. ALL RIGHTS RESERVED</p>
+        <img src="images/logo.png" alt="logo" id="footer-logo">
+        <p>&copy2021 Grand Valley Medical Specialists, PLC. All Rights Reserved</p>
     </div>
 
 </footer>
