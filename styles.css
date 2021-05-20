@@ -91,12 +91,14 @@ a:hover {
 }
 
 .main-hero {
-    background: url(../images/screening.jpg)
-    no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    height: 50rem;
+    height: 45rem;
+    width: 100%;
+}
+
+.main-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .container {
