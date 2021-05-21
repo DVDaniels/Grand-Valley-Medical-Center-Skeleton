@@ -45,7 +45,7 @@ a:hover {
 
 .logo {
     float: left;
-    padding-top: 1rem;
+    padding-top: 1.5rem;
 }
 
 .logo img {
@@ -56,28 +56,32 @@ a:hover {
     float: right;
     font-size: 1.7rem;
     font-weight: 900;
-    padding: 1rem;
+    padding: 2rem;
     margin-right: 4rem;
     color: #003d77;
     text-shadow: 1px 2px 8px #ffffff43;
 }
 
+/* Navigation */
 .navbar {
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     height: 5rem;
-    width: 100%;
     font-size: 2rem;
     background-color: #003d78;
     color: #fff;
-    display: block;
     align-content: center;
-    padding-top: 1.8rem;
+}
+
+.link {
+    margin: 0 1.3rem;
 }
 
 .navbar a {
     color: #fff;
     text-decoration: none;
-    padding: 1.2rem;
     transition: all .3s;
 }
 
@@ -85,10 +89,6 @@ a:hover {
     color: #75d5ff;
 }
 
-.navigation {
-    float: right;
-    margin-right: 6rem;
-}
 
 .main-hero {
     height: 45rem;
@@ -109,8 +109,9 @@ a:hover {
 }
 
 .news {
-    height: 25rem;
-    padding: 3rem 6rem;
+    /* height: 25rem; */
+    padding: 2rem 6rem;
+    margin-bottom: 2rem;
     font-size: 1.8rem;
     font-weight: 600;
     background-color: rgba(255, 255, 255, 0.351);
@@ -127,6 +128,7 @@ a:hover {
 .newstext {
     height: auto;
     padding: 0 8rem;
+    margin-bottom: 2rem;
 }
 
 .headline {
@@ -171,7 +173,6 @@ a:hover {
 .square > .square-text-wrapper {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
     padding: 42px;
 }
@@ -184,7 +185,6 @@ a:hover {
 .square > .square-text-wrapper p {
     font-size: 1.5rem;
 }
-
 
 /* Footer */
 
@@ -201,4 +201,21 @@ a:hover {
     justify-content: center;
     padding-top: 4rem;
     padding-bottom: 4rem;
+}
+
+@media screen and (max-width: 700px) {
+
+    .head {
+        height: 20rem;
+    }
+
+    .navbar {
+        font-size: 1.5rem;
+    }
+    
+    .newstext {
+        padding: 2rem;
+        margin-top: 2rem;
+    }
+
 }
