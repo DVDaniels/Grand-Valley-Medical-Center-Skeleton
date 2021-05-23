@@ -93,7 +93,7 @@ a:hover {
 
 
 .main-hero {
-    height: 45rem;
+    height: 55rem;
     width: 100%;
 }
 
@@ -215,9 +215,26 @@ a:hover {
         font-size: 1.5rem;
     }
     
+    .main-hero {
+            height: 45rem;
+            width: 100%;
+
+    }
+
+
     .newstext {
         padding: 2rem;
         margin-top: 2rem;
+    }
+
+    .square {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: -4px;
     }
 
 }
