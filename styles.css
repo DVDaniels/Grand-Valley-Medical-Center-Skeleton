@@ -238,3 +238,11 @@ a:hover {
     }
 
 }
+
+/* Ajustments for large desktops */
+@media screen and (min-width: 1200px) {
+    .main-hero {
+            height: 85rem;
+            width: 100%;
+    }
+}
