@@ -13,7 +13,7 @@ html {
     font-size: 10px;
 }
 
-h1 {
+h1, h2 {
     color: #003d77;
 }
 
@@ -34,6 +34,11 @@ a:hover {
 /* Helpers */
 #center {
     text-align: center;
+}
+
+::selection {
+    background-color: #0096ff;
+    color: #fff;
 }
 
 /* ///////////////////////////////////////////// */
