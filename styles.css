@@ -107,7 +107,19 @@ a:hover {
 .main-hero {
     height: auto;
     width: 100%;
-    background-color: #003d78;
+    background-color: #000f3c;
+}
+
+.welcome {
+    position: absolute;
+    top: 85%;
+    right: 0;
+    color: #fff;
+    padding: 1.5rem;
+    font-size: 2rem;
+    background-color: #1e3d6e;
+    width: 50%;
+    text-align: center;
 }
 
 .main-hero img {
@@ -272,7 +284,11 @@ a:hover {
     .main-hero {
             height: auto;
             width: 100%;
+    }
 
+    .welcome {
+        top: 60%;
+        font-size: 1.3rem;
     }
 
     .newstext {
