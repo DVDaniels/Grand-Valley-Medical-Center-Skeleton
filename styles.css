@@ -107,7 +107,7 @@ a:hover {
 .main-hero {
     height: auto;
     width: 100%;
-    background-color: #000f3c;
+    background-image: linear-gradient(180deg, red , #0030a3);
 }
 
 .welcome {
