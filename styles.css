@@ -120,6 +120,7 @@ a:hover {
     background-color: #1e3d6e;
     width: 50%;
     text-align: center;
+    box-shadow: 5px 5px 10px #202429;
 }
 
 .main-hero img {
