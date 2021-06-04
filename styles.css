@@ -45,6 +45,8 @@ a:hover {
 /* Header */
 
 .head {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     width: 100%;
     height: 12rem;
     padding: 2rem 0;
@@ -53,7 +55,6 @@ a:hover {
 }
 
 .logo {
-    float: left;
     padding-top: 1.5rem;
     padding-left: 3rem;
 }
@@ -63,7 +64,7 @@ a:hover {
 }
 
 .contact-info {
-    float: right;
+    justify-self: end;
     font-size: 1.7rem;
     font-weight: 900;
     padding: 2rem;
@@ -79,7 +80,6 @@ a:hover {
     justify-content: flex-end;
     height: 5rem;
     font-size: 2rem;
-    /* background-color: #003d78; */
     background-image: radial-gradient( circle farthest-corner at 16.5% 28.1%,  rgb(34, 61, 110) 0%, rgb(0, 66, 128) 90% );
     color: #fff;
     align-content: center;
@@ -113,7 +113,8 @@ a:hover {
 .welcome {
     position: absolute;
     top: 85%;
-    right: 0;
+    margin-bottom: 5rem;
+    right: 0%;
     color: #fff;
     padding: 1.5rem;
     font-size: 2rem;
@@ -141,7 +142,6 @@ a:hover {
 }
 
 .news {
-    /* height: 25rem; */
     padding: 1rem 6rem;
     margin-bottom: 2rem;
     font-size: 1.8rem;
@@ -256,7 +256,7 @@ a:hover {
     padding: 1rem;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
 
     .head {
         height: 16rem;
@@ -265,6 +265,7 @@ a:hover {
 
     .logo {
         padding-left: 1rem;
+        display: block;
     }
 
     .logo img {
@@ -288,17 +289,17 @@ a:hover {
     }
 
     .welcome {
-        top: 60%;
+        top: 65%;
         font-size: 1.3rem;
     }
 
-    .newstext {
-        padding: 2rem 0;
-        margin-top: 1rem;
+    .news {
+        padding: 2rem 1rem;
     }
 
-    .b1 {
-        padding: 2rem;
+    .newstext {
+        padding: 2rem 1rem;
+        margin-top: 1rem;
     }
 
     .squares-wrapper > .squares  .square  {
@@ -322,9 +323,21 @@ a:hover {
 
 /* ///////////////////////////////////////////// */
 /* Ajustments for large desktops */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1500px) {
     .main-hero {
             height: auto;
             width: 100%;
+    }
+
+    .welcome {
+        top: 80vh;
+        font-size: 4rem;
+    }
+
+    .news {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 4rem;
     }
 }
