@@ -45,8 +45,6 @@ a:hover {
 /* Header */
 
 .head {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     width: 100%;
     height: 12rem;
     padding: 2rem 0;
@@ -55,6 +53,7 @@ a:hover {
 }
 
 .logo {
+    float: left;
     padding-top: 1.5rem;
     padding-left: 3rem;
 }
@@ -64,7 +63,7 @@ a:hover {
 }
 
 .contact-info {
-    justify-self: end;
+    float: right;
     font-size: 1.7rem;
     font-weight: 900;
     padding: 2rem;
@@ -139,6 +138,19 @@ a:hover {
     width: 100%;
     background: rgb(132,207,255);
     background: linear-gradient(90deg, rgba(132,207,255,1) 6%, rgba(117,213,255,1) 47%, rgba(132,207,255,1) 100%);
+}
+
+.interior-container {
+    height: 100%;
+    width: auto;
+    font-size: 2rem;
+    background-color: #fff;
+    padding: 10rem;
+    margin-bottom: 4rem;
+}
+
+.container--narrow {
+    padding: 5rem;
 }
 
 .news {
